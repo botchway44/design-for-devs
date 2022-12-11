@@ -1,0 +1,110 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  padding: 0px;
+
+  /* margin: 40px; */
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Vidaloka", serif;
+  font-size: 58px;
+  font-weight: normal;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  line-height: 2rem;
+}
+.header {
+  grid-area: header;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+}
+
+.header ul li {
+  margin-right: 20px;
+}
+.sidebar {
+  grid-area: sidebar;
+
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.content {
+  grid-area: content;
+
+  background-image: url("./images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* max-height: 800px; */
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-gap: 10px 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas:
+    ".. header header"
+    "sidebar content content"
+    "footer footer footer";
+
+  box-sizing: border-box;
+
+  padding: 60px 60px 60px 120px;
+}
+
+.box {
+  /* background-color: #444; */
+  /* color: #fff; */
+  border-radius: 5px;
+  /* padding: 40px; */
+  font-size: 150%;
+}
+
+.header,
+.footer {
+  /* background-color: #999; */
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.sideText {
+  position: fixed;
+  left: 1px;
+  top: 300px;
+  margin-left: -50px;
+
+  font-size: 25px;
+
+  transform: rotate(90deg);
+}
